@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+  <head>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
+    <b:if cond='data:blog.pageType == &quot;index&quot;'>
+    </b:if>
+    <b:if cond='data:blog.pageType == &quot;index&quot;'>
+      <title>
+        <data:blog.pageTitle/>
+      </title>
+      <b:else/>
+      <title>
+        <data:blog.pageName/>
+      </title>
+    </b:if>
+    <b:include data='blog' name='all-head-content'/>
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+    
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css" />
+
+    <b:skin><![CDATA[
+    @import url(http://fonts.googleapis.com/css?family=Muli);
+body {
+padding-top: 70px;
+background: url(https://3e1edf911ceb18ef73799c16cb2b2f54b4d1cdfe.googledrive.com/host/0BzNuNsgwJPZ5cDltc2lzNHlselE) repeat scroll 0% 0% transparent;
+}
+h1, h2 {
+    color: #333333;
+    font-family: Helvetica,Arial;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.1em;
+    padding-bottom: 5px;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+.theme-dropdown .dropdown-menu {
+  display: block;
+  position: static;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;  
+}
+
+.post {
+color: #1E1E1E;
+font-family: 'Muli',Helvetica,Arial,Georgia,Times New Roman;
+font-size: 16px;
+line-height: 24px;
+text-align: justify;
+text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.top-bar {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(https://2152d2b17032c2af4c4ecf10e8c4ab7e575de6fd.googledrive.com/host/0BzNuNsgwJPZ5T0dEYXlpZnNxLTg);
+    background-origin: padding-box;
+    background-position: center top;
+    background-repeat: repeat;
+    background-size: auto auto;
+    height: 3px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+.plain-bar {
+background: url(https://2152d2b17032c2af4c4ecf10e8c4ab7e575de6fd.googledrive.com/host/0BzNuNsgwJPZ5T0dEYXlpZnNxLTg) repeat scroll 0% 0% transparent;
+padding-top: 2px;
+}
+
+.footer {
+color:#FBFBFB;
+background-color:#FBFBFB;
+padding-bottom:0px;
+}
+.footer p {
+    margin: 20px 0;
+	color: #999999;
+	float:left;
+}
+.header-logo {
+padding-left: 15px;
+padding-top: 15px;
+float:left;
+}
+.footer-logo {
+padding-right: 20px;
+padding-top: 15px;
+float:left;
+}
+
+.box-heading {
+color: #6E6E6E !important;
+font-weight: bold;
+}
+
+.breadcrumb {
+  padding: 7px 14px;
+  margin: 0 0 18px;
+  background-color: #fbfbfb;
+  background-image: -moz-linear-gradient(top, #ffffff, #f5f5f5);
+  background-image: -ms-linear-gradient(top, #ffffff, #f5f5f5);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f5f5f5));
+  background-image: -webkit-linear-gradient(top, #ffffff, #f5f5f5);
+  background-image: -o-linear-gradient(top, #ffffff, #f5f5f5);
+  background-image: linear-gradient(to bottom, #ffffff, #f5f5f5);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f5f5f5', GradientType=0);
+  border: 1px solid #ddd;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 0 #ffffff;
+  -moz-box-shadow: inset 0 1px 0 #ffffff;
+  box-shadow: inset 0 1px 0 #ffffff;
+}
+.breadcrumb > li {
+  display: inline-block;
+  text-shadow: 0 1px 0 #ffffff;
+}
+.breadcrumb > li + li:before {
+    color: #CCCCCC;
+    content: "\00BB";
+    padding: 0 5px;
+}
+.breadcrumb .divider {  
+  color: #999999;
+}
+.breadcrumb .active a {
+  color: #333333;
+}
+        ]]></b:skin>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="top-bar"></div>
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>            
+          <a class="header-logo" href="#"><img src="https://760e223fee634973f0268168cc932fc26834b215.googledrive.com/host/0BzNuNsgwJPZ5Vi1vZGI3bnlOVzA" /></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="blog.html">Blog1</a></li>
+            <li><a href="blog.html">Blog2</a></li>
+            <li><a href="blog.html">Blog3</a></li>
+            <li><a href="blog.html">Blog4</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <!-- Fixed navbar -->
+    <div class="container theme-showcase">
+      <div class="container">
+        <div class="row">				
+          <div class="col-sm-9">
+            <div class="page-header">
+              <h2>Ajax Select and Upload Multiple Images with Jquery</h2>						
+              <p class="post">
+                This post is the continuation of my previous AngularJS tutorial, I had explained JSON parsing using AngularJS. In this we are going to explain how to do two way data binding with Angular JS. Data binding is the most useful feature in AngularJS, It will help you to save from writing a lots of regular code.     
+                <img src="images/outlook.png" class="img-responsive"/>
+              </p>
+            </div>
+            <div class="page-header">
+              <h2>AngularJS Tutorial Two Way Data Binding </h2>
+              <p class="post">
+                This post is the continuation of my previous AngularJS tutorial, I had explained JSON parsing using AngularJS. In this we are going to explain how to do two way data binding with Angular JS. Data binding is the most useful feature in AngularJS, It will help you to save from writing a lots of regular code.     
+                <img src="images/outlook.png" class="img-responsive"/>
+              </p>
+            </div>
+            <div class="page-header">
+              <h2>PHP Email Verification Script. </h2>
+              <p class="post">
+                This post is the continuation of my previous AngularJS tutorial, I had explained JSON parsing using AngularJS. In this we are going to explain how to do two way data binding with Angular JS. Data binding is the most useful feature in AngularJS, It will help you to save from writing a lots of regular code.     
+                <img src="images/outlook.png" class="img-responsive"/>
+              </p>
+            </div>
+            <div class="page-header">
+              <h2>Understanding Regular Expression</h2>
+              <p class="post">
+                This post is the continuation of my previous AngularJS tutorial, I had explained JSON parsing using AngularJS. In this we are going to explain how to do two way data binding with Angular JS. Data binding is the most useful feature in AngularJS, It will help you to save from writing a lots of regular code.     
+                <img src="images/outlook.png" class="img-responsive"/>
+              </p>
+            </div>
+            <div class="page-header">
+              <h2>10 Reasons To Get A .BLOG Name Now</h2>
+              <p class="post">
+                This post is the continuation of my previous AngularJS tutorial, I had explained JSON parsing using AngularJS. In this we are going to explain how to do two way data binding with Angular JS. Data binding is the most useful feature in AngularJS, It will help you to save from writing a lots of regular code.     
+                <img src="images/outlook.png" class="img-responsive"/>
+              </p>
+            </div>
+          </div>
+          
+          <div class="col-sm-3">
+            <div class="panel panel-default">
+              <div class="row">							
+                <div class="col-lg-12">
+                  <div class="input-group">
+                    <input type="text" class="form-control" />
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button">Search!</button>
+                    </span>
+                  </div><!-- /input-group -->
+                </div><!-- /.col-lg-6 -->
+              </div><!-- /.row -->
+            </div>
+            
+            <div class="panel panel-default">
+              <!-- Default panel contents -->
+              <div class="panel-heading box-heading">Most Popular Posts</div>
+              <!-- List group -->
+              <ul class="list-group">
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Morbi leo risus</li>
+              <li class="list-group-item">Porta ac consectetur ac</li>
+              <li class="list-group-item">Vestibulum at eros</li>
+              </ul>
+            </div>
+            <div class="panel panel-default">
+              <!-- Default panel contents -->
+              <div class="panel-heading box-heading">Panel heading</div>
+              <div class="panel-body">
+              <p>If there is no panel body, the component moves from panel header to table without interruption.</p>
+              </div>
+            </div>
+            <ul class="list-group">
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Morbi leo risus</li>
+              <li class="list-group-item">Porta ac consectetur ac</li>
+              <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+
+          </div>
+        </div>		
+      </div> <!-- /container -->
+	</div>
+	<div class="footer">
+		<div class="plain-bar"></div>
+		<div class="container">
+			<a class="footer-logo" href="#"><img src="https://760e223fee634973f0268168cc932fc26834b215.googledrive.com/host/0BzNuNsgwJPZ5Vi1vZGI3bnlOVzA" /></a>
+			<p>
+				Copyright &#169; 2013 addedbits.com. All rights reserved, the content is copyrighted to Mahavir Munot  - <a href='#' title='addedbits Advertisement'>Advertise</a>
+			</p>
+		</div>
+	</div>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
