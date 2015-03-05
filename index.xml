@@ -31,127 +31,134 @@
     <link href='https://79ce7bbd71766b2fae4ab744260dde3d6a47168c.googledrive.com/host/0BzNuNsgwJPZ5RnMxWXRuVmJvRVU' rel='shortcut icon' type='image/vnd.microsoft.icon'/>    
   </head>
   <body>
-<!-- Fixed navbar -->
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-<div class="top-bar"></div>
-<div class="container">
-<div class="navbar-header">
-<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-<span class="sr-only">Toggle navigation</span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
-<a class="header-logo" href="#"><img src="https://760e223fee634973f0268168cc932fc26834b215.googledrive.com/host/0BzNuNsgwJPZ5Vi1vZGI3bnlOVzA" /></a>
-</div>
-<div class="navbar-collapse collapse">
-<ul class="nav navbar-nav navbar-right">
-<li class="active"><a href="">Home</a></li>
-<li><a href="blog.html">Blog</a></li>
-<li><a href="blog.html">Blog1</a></li>
-<li><a href="blog.html">Blog2</a></li>
-<li><a href="blog.html">Blog3</a></li>
-<li><a href="blog.html">Blog4</a></li>
-<li><a href="#contact">Contact</a></li>
-<li class="dropdown">
-<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-<ul class="dropdown-menu">
-<li><a href="#">Action</a></li>
-<li><a href="#">Another action</a></li>
-<li><a href="#">Something else here</a></li>
-<li class="divider"></li>
-<li class="dropdown-header">Nav header</li>
-<li><a href="#">Separated link</a></li>
-<li><a href="#">One more separated link</a></li>
-</ul>
-</li>
-</ul>
-</div><!--/.nav-collapse -->
-</div>
-</div>
-<!-- Fixed navbar -->
-<div class="container theme-showcase">
-<div class="container">
-<div class="row">
-<div class="col-sm-9">
-  <b:section class='Blog Header' id='header' maxwidgets='1' showaddelement='no'>
-    <b:widget id='Blog1' locked='false' title='Blog Posts' type='Blog'>
-      <b:includable id='main'>
-        <b:include name="BlogElements" data='blog'/><br/>
-        <b:include name='Postings'/>
-      </b:includable>
-  
-      <b:includable id='BlogElements' var='b'>
-        <data:b.title/>
-      </b:includable>
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="top-bar"></div>
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="header-logo" href="#"><img src="https://760e223fee634973f0268168cc932fc26834b215.googledrive.com/host/0BzNuNsgwJPZ5Vi1vZGI3bnlOVzA" /></a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="blog.html">Blog1</a></li>
+          <li><a href="blog.html">Blog2</a></li>
+          <li><a href="blog.html">Blog3</a></li>
+          <li><a href="blog.html">Blog4</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-header">Nav header</li>
+              <li><a href="#">Separated link</a></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+  <!-- Fixed navbar -->
+  <div class="container theme-showcase">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9">
+          <b:section class='Blog Header' id='header' maxwidgets='1' showaddelement='no'>
+            <b:widget id='Blog1' locked='false' title='Blog Posts' type='Blog'>
+              <b:includable id='main'>
+                <b:include name="BlogElements" data='blog'/><br/>
+                <b:include name='Postings'/>
+              </b:includable>  
+              
+              <b:includable id='BlogElements' var='b'>
+                <data:b.title/>
+              </b:includable>
+              
+              <b:includable id='Postings'>
+                <b:loop values='data:posts' var='p'>
+                  <b:include name='post' data='p'/>
+                </b:loop>
+              </b:includable>
  
- 	  <b:includable id='Postings'>
-	  <b:loop values='data:posts' var='p'>
-        
-           <div class="page-header">
-<h2><data:p.title/></h2>
-<p class="post">
-<data:p.body/>
-</p>
-</div>
- </b:loop>
-</b:includable>
-    </b:widget>
-  </b:section>
-  <b:section class='whatever' id='whatever'/>
- </div>
-<div class="col-sm-3">
-<div class="panel panel-default">
-<div class="row">
-<div class="col-lg-12">
-<div class="input-group">
-<input type="text" class="form-control" />
-<span class="input-group-btn">
-<button class="btn btn-default" type="button">Search!</button>
-</span>
-</div><!-- /input-group -->
-</div><!-- /.col-lg-6 -->
-</div><!-- /.row -->
-</div>
-<div class="panel panel-default">
-<!-- Default panel contents -->
-<div class="panel-heading box-heading">Most Popular Posts</div>
-<!-- List group -->
-<ul class="list-group">
-<li class="list-group-item">Cras justo odio</li>
-<li class="list-group-item">Dapibus ac facilisis in</li>
-<li class="list-group-item">Morbi leo risus</li>
-<li class="list-group-item">Porta ac consectetur ac</li>
-<li class="list-group-item">Vestibulum at eros</li>
-</ul>
-</div>
-<div class="panel panel-default">
-<!-- Default panel contents -->
-<div class="panel-heading box-heading">Panel heading</div>
-<div class="panel-body">
-<p>If there is no panel body, the component moves from panel header to table without interruption.</p>
-</div>
-</div>
-<ul class="list-group">
-<li class="list-group-item">Cras justo odio</li>
-<li class="list-group-item">Dapibus ac facilisis in</li>
-<li class="list-group-item">Morbi leo risus</li>
-<li class="list-group-item">Porta ac consectetur ac</li>
-<li class="list-group-item">Vestibulum at eros</li>
-</ul>
-</div>
-</div>
-</div> <!-- /container -->
-</div>
-<div class="footer">
-<div class="plain-bar"></div>
-<div class="container">
-<a class="footer-logo" href="#"><img src="https://760e223fee634973f0268168cc932fc26834b215.googledrive.com/host/0BzNuNsgwJPZ5Vi1vZGI3bnlOVzA" /></a>
-<p>
-Copyright &#169; 2013 addedbits.com. All rights reserved, the content is copyrighted to Mahavir Munot - <a href='#' title='addedbits Advertisement'>Advertise</a>
-</p>
-</div>
-</div>
+              <b:includable id='post' var='p'>
+                <div class="page-header">
+                  <h2><data:p.title/></h2>
+                  <p class="post"><data:p.body/></p>
+                </div>
+              </b:includable>
+
+            </b:widget>
+          </b:section>
+          <b:section class='whatever' id='whatever'/>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="panel panel-default">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="input-group">
+                  <input type="text" class="form-control" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Search!</button>
+                  </span>
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-12 -->
+            </div><!-- /.row -->
+          </div>
+          
+          <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading box-heading">Most Popular Posts</div>
+            <!-- List group -->
+            <ul class="list-group">
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Morbi leo risus</li>
+              <li class="list-group-item">Porta ac consectetur ac</li>
+              <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+          </div>
+          
+          <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading box-heading">Panel heading</div>
+            <div class="panel-body">
+              <p>If there is no panel body, the component moves from panel header to table without interruption.</p>
+            </div>
+          </div>
+          
+          <ul class="list-group">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+        </div>
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+  </div> <!-- /container theme-showcase-->
+  
+  <div class="footer">
+    <div class="plain-bar"></div>
+    <div class="container">
+      <a class="footer-logo" href="#"><img src="https://760e223fee634973f0268168cc932fc26834b215.googledrive.com/host/0BzNuNsgwJPZ5Vi1vZGI3bnlOVzA" /></a>
+      <p>
+        Copyright &#169; 2013 addedbits.com. All rights reserved, the content is copyrighted to Mahavir Munot - <a href='#' title='addedbits Advertisement'>Advertise</a>
+      </p>
+    </div>
+  </div>
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
