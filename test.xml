@@ -41,7 +41,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="header-logo" href="/"><img src="https://760e223fee634973f0268168cc932fc26834b215.googledrive.com/host/0BzNuNsgwJPZ5Vi1vZGI3bnlOVzA" /></a>
+        <a class="header-logo" href="#"><img src="https://760e223fee634973f0268168cc932fc26834b215.googledrive.com/host/0BzNuNsgwJPZ5Vi1vZGI3bnlOVzA" /></a>
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
@@ -86,7 +86,7 @@
           </b:widget>
         </b:section>          
             
-        <b:section class='col-sm-3' id='sidebar'>        
+        <b:section class='col-sm-3' id='sidebar'>
           <b:widget id='PopularPosts1' locked='false' title='Popular Posts' type='PopularPosts'>          
             <b:includable id='main'>
               <div class="panel panel-default">
@@ -102,7 +102,6 @@
             </b:includable>
           </b:widget>
         </b:section>
-        
       </div> <!-- /row -->
     </div> <!-- /container -->
   </div> <!-- /container theme-showcase-->
@@ -110,7 +109,7 @@
   <div class="footer">
     <div class="plain-bar"></div>
     <div class="container">
-      <a class="footer-logo" href="/"><img src="https://760e223fee634973f0268168cc932fc26834b215.googledrive.com/host/0BzNuNsgwJPZ5Vi1vZGI3bnlOVzA" /></a>
+      <a class="footer-logo" href="#"><img src="https://760e223fee634973f0268168cc932fc26834b215.googledrive.com/host/0BzNuNsgwJPZ5Vi1vZGI3bnlOVzA" /></a>
       <p>
         Copyright &#169; 2013 addedbits.com. All rights reserved, the content is copyrighted to Mahavir Munot - <a href='#' title='addedbits Advertisement'>Advertise</a>
       </p>
