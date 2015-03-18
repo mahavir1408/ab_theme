@@ -27,54 +27,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link href='https://79ce7bbd71766b2fae4ab744260dde3d6a47168c.googledrive.com/host/0BzNuNsgwJPZ5RnMxWXRuVmJvRVU' rel='shortcut icon'/>
-    <link href='https://79ce7bbd71766b2fae4ab744260dde3d6a47168c.googledrive.com/host/0BzNuNsgwJPZ5RnMxWXRuVmJvRVU' rel='shortcut icon' type='image/vnd.microsoft.icon'/>   
-    <script type='text/javascript'>
-posts_no_thumb_sum = 490;
-posts_thumb_sum = 400;
-img_thumb_height = 160;
-img_thumb_width = 180;
-</script>
-<script type='text/javascript'>
-//<![CDATA[
-function removeHtmlTag(strx,chop){
-if(strx.indexOf("<")!=-1)
-{
-var s = strx.split("<");
-for(var i=0;i<s.length;i++){
-if(s[i].indexOf(">")!=-1){
-s[i] = s[i].substring(s[i].indexOf(">")+1,s[i].length);
-}
-}
-strx = s.join("");
-}
-chop = (chop < strx.length-1) ? chop : strx.length-2;
-while(strx.charAt(chop-1)!=' ' && strx.indexOf(' ',chop)!=-1) chop++;
-strx = strx.substring(0,chop-1);
-return strx+'...';
-}
-function createSummaryAndThumb(pID, pURL, pTITLE){
-var div = document.getElementById(pID);
-var imgtag = "";
-var img = div.getElementsByTagName("img");
-var summ = posts_no_thumb_sum;
-if(img.length>=1) {
-imgtag = '<span class="posts-thumb" style="float:left; margin-right: 10px;"><a href="'+ pURL +'" title="'+ pTITLE+'"><img src="'+img[0].src+'" width="'+img_thumb_width+'px" height="'+img_thumb_height+'px" /></a></span>';
-summ = posts_thumb_sum;
-}
-
-var summary = imgtag + '<div>' + removeHtmlTag(div.innerHTML,summ) + '</div>';
-div.innerHTML = summary;
-}
-//]]>
-</script>
-
-<b:if cond='data:blog.pageType != &quot;static_page&quot;'>
-<b:if cond='data:blog.pageType != &quot;item&quot;'>
-<style type='text/css'>
-.readmore a {text-decoration: none; }
-</style>
-</b:if>
-</b:if>
+    <link href='https://79ce7bbd71766b2fae4ab744260dde3d6a47168c.googledrive.com/host/0BzNuNsgwJPZ5RnMxWXRuVmJvRVU' rel='shortcut icon' type='image/vnd.microsoft.icon'/>    
   </head>
   <body>
   <!-- Fixed navbar -->
@@ -126,17 +79,7 @@ div.innerHTML = summary;
               <b:loop values='data:posts' var='p'>
                 <div class="page-header">
                   <h2><a expr:href='data:p.url'><data:p.title/></a></h2>
-                  <p class="post">
-                  <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
-                    <b:if cond='data:blog.pageType != &quot;item&quot;'>
-                      <div expr:id='&quot;summary&quot; + data:p.id' class="post"><data:p.body/></div>
-                      <script type='text/javascript'>createSummaryAndThumb(&quot;summary<data:p.id/>&quot;,&quot;<data:p.url/>&quot;,&quot;<data:p.title/>&quot;);</script>
-                      <span class='readmore' style='float:right;'><a expr:href='data:p.url'>Read More &#187;</a></span>
-                    </b:if>
-                  </b:if>
-                  <b:if cond='data:blog.pageType == &quot;item&quot;'><data:p.body/></b:if>
-                  <b:if cond='data:blog.pageType == &quot;static_page&quot;'><data:p.body/></b:if>
-                  </p>
+                  <p class="post"><data:p.body/></p>
                 </div>
               </b:loop>
             </b:includable>  
